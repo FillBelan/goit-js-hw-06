@@ -9,7 +9,7 @@ function checkInput(event) {
     const password = form.password.value;
 
 
-    if (email.value || password.value === '') {
+    if (email === '' || password === '') {
         alert ('Все поля должны быть заполнены!');
 return;
     }
