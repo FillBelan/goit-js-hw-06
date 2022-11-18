@@ -17,7 +17,8 @@
 const testInput = document.querySelector('#validation-input');
 
 const lostFocus = testInput.addEventListener('blur', () => {
-    if (testInput.value.length == testInput.dataset.length) {
+    if (testInput.value.length == testInput.dataset.length) { 
+        testInput.classList.remove('invalid');
         return testInput.classList.add('valid');
     }
     testInput.classList.add('invalid');
